@@ -3,7 +3,7 @@ package com.selfstudy.springboot.myspringbootcode.controller;
 import java.util.List;
 
 import com.selfstudy.springboot.myspringbootcode.model.Customer;
-import com.selfstudy.springboot.myspringbootcode.service.CustomerService;
+import com.selfstudy.springboot.myspringbootcode.service.CustomerServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +20,7 @@ public class AppController{
     @Value("${spring.application.name}")
     private String appName;
     @Autowired
-    private CustomerService customerService;
+    private CustomerServiceImpl customerService;
 
     @GetMapping("/pulse") 
     public String pulseCheck(){

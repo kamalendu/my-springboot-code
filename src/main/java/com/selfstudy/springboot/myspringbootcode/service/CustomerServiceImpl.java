@@ -4,16 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.selfstudy.springboot.myspringbootcode.model.Customer;
+import com.selfstudy.springboot.myspringbootcode.repository.CutomerRepositoryI;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CustomerServiceImpl implements CustomerService {
+public class CustomerServiceImpl{
 
-    @Override
+    @Autowired
+    private CutomerRepositoryI customerRepo;
     public List<Customer> getAllCustomer() {
-        List<Customer> custList = new ArrayList<>();
-        Customer cs = new Customer(1, "Kamal", "Atlanta");
-        custList.add(cs);
+        List<Customer> custList = customerRepo.findAll();
+        // Customer cs = new Customer(1, "Kamal", "Atlanta");
+        // custList.add(cs);
+
         return custList;
     }
     
