@@ -7,8 +7,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories(basePackages = "com.selfstudy.springboot.myspringbootcode.model")
 public class MySpringbootCodeApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(MySpringbootCodeApplication.class);

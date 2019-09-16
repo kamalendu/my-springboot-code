@@ -1,4 +1,4 @@
-package com.selfstudy.springboot.myspringbootcode.model;
+package com.selfstudy.springboot.myspringbootcode.model.customer;
 
 
 import javax.persistence.Entity;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Customer {
     @Id
-    private int id;
+    private Integer id;
     private String name;
     private String city;
 }

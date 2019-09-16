@@ -1,6 +1,6 @@
-package com.selfstudy.springboot.myspringbootcode.repository;
+package com.selfstudy.springboot.myspringbootcode.model.customer;
 
-import com.selfstudy.springboot.myspringbootcode.model.Customer;
+import com.selfstudy.springboot.myspringbootcode.model.customer.Customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
